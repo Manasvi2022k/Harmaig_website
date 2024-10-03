@@ -1,6 +1,6 @@
 import React from 'react'
 import Hono from '../components/Hono';
-import ContactDetails from '../components/ContactDetails'
+// import ContactDetails from '../components/ContactDetails'
 import Footer from '../components/Footer'
 import Productdes from '../components/Productdes'
 
@@ -9,7 +9,7 @@ function Product() {
     <div>
       <Hono />
       <Productdes/>
-      <ContactDetails/>
+      {/* <ContactDetails/> */}
       <Footer/>
     </div>
   )

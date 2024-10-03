@@ -2,19 +2,21 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
-import CustomerSupport from "./components/CustomerSupport";
-import Footer from "./components/Footer";
+// import CustomerSupport from "./components/CustomerSupport";
+// import Footer from "./components/Footer";
 import ContactDetails from "./components/ContactDetails";
 import "./App.css";
 
 import HomePage from "./pages/HomePage";
+import AboutUs from "./components/AboutUs.js";
+import Services from "./components/Services.js";
 
 import Product from "./pages/Product";
-import Head from "./components/Head";
+// import Head from "./components/Head";
 import Profile from "./pages/Profile";
 import Homepagel from "./pages/Homepagel";
 import Signup from "./pages/Signup";
-import ArcOfRings from "./components/ArcOfRings";
+// import ArcOfRings from "./components/ArcOfRings";
 import Whislist from "./pages/Whislist";
 import Cart from "./pages/Cart";
 import Order from "./pages/Order";
@@ -27,6 +29,7 @@ import Earrings from "./pages/Earrings.js";
 import Bracelets from "./pages/Bracelets.js";
 function App() {
   return (
+    
     <Router>
       {/* <Head/> */}
       <Routes>
@@ -43,6 +46,12 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/product" element={<Product />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
+        <Route path="/ContactDetails" element={<ContactDetails />}></Route>
+        <Route path="/AboutUs" element={<AboutUs />}></Route>
+        <Route path="/Services" element={<Services />}></Route>
+        <Route path="/Header" element={<Header />}></Route>
+
+
 
         <Route path="/Homepagel" element={<Homepagel />}></Route>
         <Route path="/Whislist" element={<Whislist />}></Route>
@@ -53,6 +62,7 @@ function App() {
       </Routes>
     </Router>
   );
+  
 }
 
 export default App;

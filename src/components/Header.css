@@ -1,52 +1,94 @@
-.header {
-    display: flex;
+.Header {
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: white;
+    padding: 30px 90px;
+    background-color: rgb(126, 123, 123);
     
     position: sticky;
-    top: 0;
-  }
-  .item{
+    top: 10px; */
+
     display: flex;
-    align-items: center;
+  justify-content: start;
+  align-items: center;
+  padding: 10px 40px;
+  margin: 0px 0px;
+  background: #ecebeb;
+  border-bottom: 1px solid #e3e0e0;
+  height: 8vh;
+  position: relative;
+  z-index: 99;
+  gap: 20px;
+  }
+  .Header .item{
+    display: flex;
+    
     
   }
-  .logo {
+  /* .logo {
     font-size: 1.5em;
     font-weight: bold;
+    align-items: center;
   }
-  
+   */
+
+
+   .Header .logo {
+    font-size: 2em;
+    font-weight: 500;
+    font-family: "Be Vietnam Pro";
+    letter-spacing: 1.5px;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 8%;
+  }
   nav ul {
-    list-style: none;
+    list-style-type: style none;;
     display: flex;
-    gap: 15px;
+    gap: 20px;
   }
   
   nav ul li {
     cursor: pointer;
   }
   
-  .user-section {
+  /* .user-section {
     display: flex;
+    margin-right: 0px;
+  } */
+
+  .Header .user-section {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    /* text-decoration: none; */
+    /* color: #333; */
+    /* font-size: 0.875rem; */
+    /* font-weight: 500; */
+    right: 0px;
+    position: absolute;
+    /* right: 30px; */
+    gap: 5px;
+
   }
   
   .logout {
-    margin-right: 30px;
+    margin-right: 5px;
+    align-items: end;
     border: 1px solid;
-    background-color: black;
+    background-color: rgb(28, 27, 27);
     color:white;
-    height: 40px;
-    width: 70px;
-    border-radius: 6px;
+    height: 35px;
+    width: 50px;
+    border-radius: 5px;
   }
   
-  .user-icon {
+  .Header .user-icon {
     font-size: 1.5em;
-    margin-right: 8px;
+    margin-right:90%;
+    cursor: pointer;
   }
   li{
-    color: black;
+    color: rgb(9, 8, 8);
   }

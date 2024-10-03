@@ -6,7 +6,7 @@ import Explore from "../components/Explore";
 import ArcOfRings from "../components/ArcOfRings";
 
 import Hono from "../components/Hono";
-import Card from "../components/Card";
+// import Card from "../components/Card";
 const style= document.createElement('style');
 style.innerHTML=
 `html {
@@ -42,7 +42,7 @@ function Homepagel() {
       <Hono/>
       <Hero />
       <Explore />
-      {/* <ArcOfRings /> */}
+      <ArcOfRings />
       {/* <div className="Card">
       <Card/>
       <Card/>

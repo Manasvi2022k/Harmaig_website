@@ -47,26 +47,32 @@ function Head() {
             <span></span>
             <ul id="menu">
               <div className="line"></div>
-              <RouterLink to="/products/rings" onClick={closeMenu}>
+              <RouterLink to="/products/rings" >
                 <li>
                   <h4>Rings</h4>
                 </li>
               </RouterLink>
-              <RouterLink to="/products/necklaces" onClick={closeMenu}>
+              <RouterLink to="/products/necklaces" >
                 <li>
                   <h4>Necklaces</h4>
                 </li>
               </RouterLink>
-              <RouterLink to="/products/earrings" onClick={closeMenu}>
+              <RouterLink to="/products/earrings" >
                 <li>
                   <h4>Earrings</h4>
                 </li>
               </RouterLink>
-              <RouterLink to="/products/bracelets" onClick={closeMenu}>
+              <RouterLink to="/products/bracelets" >
                 <li>
                   <h4>Bracelets</h4>
                 </li>
               </RouterLink>
+              {/* preveously use closeMenu on click, */}
+              {/* <RouterLink to="/products/bracelets" onClick={closeMenu}>
+                <li>
+                  <h4>Bracelets</h4>
+                </li>
+              </RouterLink> */}
               <a href="#" onClick={closeMenu}>
                 <li>
                   <h4>Anklet</h4>
@@ -87,30 +93,35 @@ function Head() {
                   <h4>Children's Jewellery</h4>
                 </li>
               </a>
-              <h4>Services</h4>
+              <RouterLink to="/Services" onClick={closeMenu}>
+                <li>
+                  <h4>Services</h4>
+                </li>
+              </RouterLink>
+              {/* <h4>Services</h4>
               <p className="sub">Repairs</p>
               <div className=" service">
                 <p>Free of cost</p>
                 <p>Terms:</p>
                 <p>Additional gold weight </p>
                 <p>billed at current market rate</p>
-              </div>
-              <p className="sub">Personalisation</p>
+              </div> */}
+              {/* <p className="sub">Personalisation</p>
               <div className="personalisation">
                 <p> Contact Us on:</p>
                 <p>+91 8962675833</p>
-              </div>
+              </div> */}
 
-              <p className="sub">Art of Gifting</p>
+              {/* <p className="sub">Art of Gifting</p>
 
               <div className="personalisation">
                 <p> Contact Us on:</p>
                 <p>+91 8962675833</p>
-              </div>
-              <h4>Connect</h4>
-              <p className="service">Can we help you?</p>
+              </div> */}
+              {/* <h4>Connect</h4>
+              <p className="service">Can we help you?</p> */}
 
-              <p className="service">+91 8963675833</p>
+              {/* <p className="service">+91 8963675833</p> */}
             </ul>
           </div>
         </nav>
@@ -122,9 +133,11 @@ function Head() {
       </button>
       <div className="logo">HARMAIG</div>
       <a className="sign-in">
-      <RouterLink to="/home">Home</RouterLink>
+      <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/login">Login</RouterLink>
         <RouterLink to="/signup">Sign up</RouterLink>{" "}
+        <RouterLink to="/ContactDetails">Contact Us</RouterLink>
+        <RouterLink to="/AboutUs">About Us</RouterLink>
       </a>
     </header>
   );

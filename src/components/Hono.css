@@ -235,9 +235,9 @@
     color: grey;
     font-size: smaller;
   }
-  .whislist{
-    height: 2.1vh;
-    width:2.1vh;
+  /* .whislist{
+    height: 3vh;
+    width:3vh;
   }
   .order{
     height: 3vh;
@@ -247,4 +247,4 @@
     height: 3vh;
     width:3vh;
     opacity:200%;
-  }
+  } */

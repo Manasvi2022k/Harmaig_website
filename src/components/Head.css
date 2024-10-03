@@ -50,6 +50,7 @@ input.search::placeholder {
   border-radius: 0%;
   border: 0;
   background-color: #fff;
+ 
 }
 
 .header .logo {
@@ -73,6 +74,7 @@ input.search::placeholder {
   right: 0px;
   position: absolute;
   right: 30px;
+  gap: 10px;
 }
 
 #menuToggle {
@@ -230,7 +232,7 @@ nav {
   left: 1px; 
 
 }
-.service,.personalisation{
+/* .service,.personalisation{
   color: grey;
   font-size: smaller;
-}
+} */
