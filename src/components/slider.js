@@ -29,8 +29,8 @@ export default function ImageSlider() {
 
   return (
     <div className="relative w-full max-w-12xl mx-auto overflow-hidden">
-      <h2 className="text-2xl font-semibold mb-4 text-center">Explore our Collection</h2>
-      <div className="relative h-[300px] md:h-[500px]">
+      {/* <h2 className="text-2xl font-semibold mb-4 text-center"></h2> */}
+      <div className="relative h-[600px] md:h-[1000px]">
         {images.map((image, index) => (
           <div
             key={index}
@@ -78,3 +78,34 @@ export default function ImageSlider() {
     </div>
   )
 }
+
+
+// import React from "react";
+
+// const ImageSlider = (props) => {
+//   return (
+//     <div id={props.id} className={`carousel slide ${props.className}`} data-bs-ride="carousel">
+//       <div className="carousel-inner">{props.children}</div>
+//       <a
+//         className="carousel-control-prev"
+//         href={"#" + props.id}
+//         role="button"
+//         data-bs-slide="prev"
+//       >
+//         <span className="carousel-control-prev-icon" aria-hidden="true" />
+//         <span className="sr-only">Previous</span>
+//       </a>
+//       <a
+//         className="carousel-control-next"
+//         href={"#" + props.id}
+//         role="button"
+//         data-bs-slide="next"
+//       >
+//         <span className="carousel-control-next-icon" aria-hidden="true" />
+//         <span className="sr-only">Next</span>
+//       </a>
+//     </div>
+//   );
+// };
+
+// export default ImageSlider;
